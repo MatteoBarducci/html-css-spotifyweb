@@ -19,38 +19,53 @@
     <div class="flex">
 
         <aside class="flex column">
-            <img id="logo" src="img/logo.svg" alt="Logo">
-            <nav>
+            <div class="mobile">
+                <div class="mobile-aside-top">
+                    <img id="small-logo" src="img/logo-small.svg" alt="small logo">
+                    <img src="img/home.svg" alt="Home image">
+                    <img src="img/search.svg" alt="Search image">
+                    <img src="img/libreria.svg" alt=">Library image">
+                </div>
+                <div class="mobile-aside-bottom">
+                    <i class="fa-solid fa-circle-arrow-down"></i>
+                    <div class="profile-icon"><img src="img/profile.svg" alt="Profile icon"></div>
+                </div>
+            </div>
+            <div class="desktop flex column">
+                <img id="logo" src="img/logo.svg" alt="Logo">
+                <nav>
+                    <ul>
+                        <li id="green-border" class="flex white"><img src="img/home.svg" alt="Home image"> Home</li>
+                        <li class="flex"><img src="img/search.svg" alt="Search image"> Cerca</li>
+                        <li class="flex"><img src="img/libreria.svg" alt=">Library image"> Libreria</li>
+                    </ul>
+                </nav>
                 <ul>
-                    <li id="green-border" class="flex white"><img src="img/home.svg" alt="Home image"> Home</li>
-                    <li class="flex"><img src="img/search.svg" alt="Search image"> Cerca</li>
-                    <li class="flex"><img src="img/libreria.svg" alt=">Library image"> Libreria</li>
+                    <li class="flex white"><strong>PLAYLIST</strong></li>
+                    <li class="flex"><div id="new-playlist">+</div> Crea Playlist</li>
+                    <li class="flex">Nome Playlist</li>
+                    <li class="flex">Nome Playlist</li>
+                    <li class="flex">Nome Playlist</li>
+                    <li class="flex">Nome Playlist</li>
+                    <li class="flex">Nome Playlist</li>
+                    <li class="flex">Nome Playlist</li>
+                    <li class="flex">Nome Playlist</li>
                 </ul>
-            </nav>
-            <ul>
-                <li class="flex white"><strong>PLAYLIST</strong></li>
-                <li class="flex"><div id="new-playlist">+</div> Crea Playlist</li>
-                <li class="flex">Nome Playlist</li>
-                <li class="flex">Nome Playlist</li>
-                <li class="flex">Nome Playlist</li>
-                <li class="flex">Nome Playlist</li>
-                <li class="flex">Nome Playlist</li>
-                <li class="flex">Nome Playlist</li>
-                <li class="flex">Nome Playlist</li>
-            </ul>
-            <div id="aside-bottom">
-                <i class="fa-solid fa-circle-arrow-down"></i>
-                <span>Installa app</span>
-                <hr>
-                <div class="flex align-center">
-                    <div id="profile-icon"><img src="img/profile.svg" alt="Profile icon"></div>
-                    <span class="white"><strong> John Doe</strong></span>
+                <div id="aside-bottom">
+                    <i class="fa-solid fa-circle-arrow-down"></i>
+                    <span>Installa app</span>
+                    <hr>
+                    <div class="flex align-center">
+                        <div class="profile-icon"><img src="img/profile.svg" alt="Profile icon"></div>
+                        <span class="white"><strong> John Doe</strong></span>
+                    </div>
                 </div>
             </div>
         </aside>
 
         <main>
-            <div class="top-header">
+            <div class="top-header flex">
+                <button>EFFETTUA L'UPGRADE</button>
             </div>
         </main>
 
