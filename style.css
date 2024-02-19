@@ -12,13 +12,17 @@ GENERAL
 body{
     font-family: "Montserrat", sans-serif;
 }
+
+img{
+    size: 100%;
+}
+
+ul{
+    list-style-type: none
+}
 /*------------
 STRUCTURE
 -------------*/
-.flex{
-    display: flex
-}
-
 main{
     width: calc(100% - 230px);
     height: calc(100vh - 90px);
@@ -28,7 +32,7 @@ main{
 
 aside{
     width: 230px;
-    background-color: blueviolet;
+    background-color: black;
 }
 
 footer{
@@ -40,6 +44,93 @@ footer{
     position: sticky;
     top: 0;
     left: 0;
-
     background-color: bisque;
 }
+/*------------
+UTILITIES
+-------------*/
+.flex{
+    display: flex;
+}
+
+.column{
+    flex-direction: column;
+}
+
+.white{
+    color: white;
+}
+
+.align-center{
+    align-items: center;
+}
+/*------------
+ASIDE
+-------------*/
+aside > *{
+    padding-right: 70px;
+    color: #717171;
+    margin-top: 15px;
+    font-size: smaller;
+    font-weight: bolder;
+}
+
+#logo{
+    margin: 20px 0 0 20px;
+}
+
+aside li{
+    align-items: center;
+    margin-top: 12px;
+    padding-left: 20px;
+    gap: 5px;
+}
+
+#green-border img{
+    margin-left: -3px;
+}
+
+#green-border{
+    border-left: solid 3px #ADFF2F;
+}
+
+nav li img{
+    width: 20px;
+}
+
+#new-playlist{
+    height: 37px;
+    width: 37px;
+    text-align: center;
+    color: black;
+    line-height: 37px;
+    font-size: 40px;
+    font-weight: lighter;
+    background-color: #A3A3A3;
+}
+
+#aside-bottom{
+    margin-top: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 5px;
+}
+
+#profile-icon{
+    width: 25px;
+    height: 25px;
+    background-color: #808080;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+aside hr{
+    margin-top: 6px;
+    margin-bottom: 12px;
+}
+
+#aside-bottom span{
+    margin-left: 5px;
+}
+
+
