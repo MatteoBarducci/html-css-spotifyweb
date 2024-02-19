@@ -1,0 +1,45 @@
+/*------------
+RESET
+-------------*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*------------
+GENERAL
+-------------*/
+body{
+    font-family: "Montserrat", sans-serif;
+}
+/*------------
+STRUCTURE
+-------------*/
+.flex{
+    display: flex
+}
+
+main{
+    width: calc(100% - 230px);
+    height: calc(100vh - 90px);
+    overflow-y: auto;
+    background-color: aqua;
+}
+
+aside{
+    width: 230px;
+    background-color: blueviolet;
+}
+
+footer{
+    height: 90px;
+    background-color: cadetblue;
+}
+
+.top-header{
+    position: sticky;
+    top: 0;
+    left: 0;
+
+    background-color: bisque;
+}
