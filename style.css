@@ -25,14 +25,16 @@ STRUCTURE
 -------------*/
 main{
     width: calc(100% - 230px);
-    height: calc(100vh - 90px);
     overflow-y: auto;
     background-color: #141922;
 }
 
+body > div{
+    height: calc(100vh - 90px);
+}
+
 aside{
     width: 230px;
-    height: calc(100vh - 90px);
     background-color: black;
     overflow-y: auto;
 }
@@ -104,6 +106,12 @@ nav li img{
     width: 20px;
 }
 
+.playlist-list{
+    overflow-y: auto;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
 #new-playlist{
     height: 37px;
     width: 37px;
@@ -120,7 +128,6 @@ nav li img{
 }
 
 #aside-bottom{
-    margin-top: auto;
     padding-left: 20px;
     padding-right: 20px;
     margin-bottom: 5px;
